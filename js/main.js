@@ -47,7 +47,7 @@ var directionDisplay;
       zoom: 7,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       center: Serbia,
-      scrollwheel: false
+     
     }
 
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
@@ -110,3 +110,7 @@ google.maps.event.addListener(autocomplete, 'place_changed', function() {
 });
 
 
+
+
+
+// From tutorial
