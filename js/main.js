@@ -26,9 +26,8 @@ $('a').click(function () {
     	return false;
 });
 
-
-
-// Map Option
+// Map Script
+// Map Options
 var directionDisplay;
   var directionsService = new google.maps.DirectionsService();
   var map;
@@ -84,6 +83,7 @@ var acOptions = {
 };
   var autocomplete = new google.maps.places.Autocomplete(document.getElementById('start'),acOptions);
   var autocomplete = new google.maps.places.Autocomplete(document.getElementById('end'),acOptions);
+  var autocomplete = new google.maps.places.Autocomplete(document.getElementById('search'),acOptions);
 autocomplete.bindTo('bounds',map);
 var infoWindow = new google.maps.InfoWindow();
 var marker = new google.maps.Marker({
@@ -108,7 +108,5 @@ google.maps.event.addListener(autocomplete, 'place_changed', function() {
 
   });
 });
-
-
 
 

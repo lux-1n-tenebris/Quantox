@@ -25,7 +25,7 @@ header {
   header h1 {
     font-size: 3vw;
     font-weight: 700;
-    font-family: Arial;
+    font-family: Lato;
     color: white;
     padding: 40px 44px;
     margin: 0 auto; }
@@ -50,10 +50,12 @@ section {
         height: 6vw;
         background-color: #fbbc05;
         border-radius: 5px;
-        box-shadow: 2px 3px 10px #000; }
+        box-shadow: 2px 3px 10px #000;
+        cursor: default; }
         section .mainWrap .textKicker .firstWord h2, section .mainWrap .textKicker .secondWord h2, section .mainWrap .textKicker .thirdWord h2, section .mainWrap .textKicker .fourthWord h2, section .mainWrap .textKicker .fifthWord h2 {
           color: white;
           font-size: 5vw;
+          font-family: Lato;
           padding: 10px 5px; }
         section .mainWrap .textKicker .firstWord:hover, section .mainWrap .textKicker .secondWord:hover, section .mainWrap .textKicker .thirdWord:hover, section .mainWrap .textKicker .fourthWord:hover, section .mainWrap .textKicker .fifthWord:hover {
           z-index: 999; }
@@ -97,37 +99,106 @@ section {
         padding: 15px;
         width: 35vw;
         font-size: 30px;
-        font-weight: 700;
-        font-family: Arial; }
+        font-weight: 900;
+        font-family: Lato; }
       section .mainWrap .inputWrap #start {
         margin-bottom: 2%; }
       section .mainWrap .inputWrap span {
         font-size: 20px;
-        font-family: Arial;
+        font-family: Lato;
         color: #fff;
         text-align: center; }
   section .buttonWrap {
     margin: 50px auto 0 auto;
     display: flex;
     justify-content: center; }
+    section .buttonWrap button {
+      outline: none;
+      border: none;
+      padding: 15px 40px;
+      font-size: 25px;
+      font-weight: 900;
+      font-family: Lato;
+      background-color: #4285f4;
+      color: #fff;
+      border-top-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      cursor: pointer;
+      transition: 0.4s cubic-bezier(0.38, 1.78, 0.97, 1.2); }
+      section .buttonWrap button:hover {
+        padding: 20px 50px; }
 
 .googleMaps {
-  box-shadow: 0 -15px 60px #000;
-  filter: grayscale(90%);
-  -webkit-filter: grayscale(90%);
-  -moz-filter: grayscale(90%);
-  -ms-filter: grayscale(90%);
-  background-color: #e5e3df; }
+  box-shadow: 0 -15px 60px #000; }
   .googleMaps #map {
     width: 100%;
-    height: 100vh; }
+    height: 100vh;
+    filter: grayscale(90%);
+    -webkit-filter: grayscale(90%);
+    -moz-filter: grayscale(90%);
+    -ms-filter: grayscale(90%);
+    background-color: #e5e3df; }
   .googleMaps .panel {
     position: absolute;
     z-index: 5;
     background-color: white;
-    width: 40vw;
-    height: 50px;
-    border-bottom-right-radius: 10px; }
+    width: 300px;
+    height: 50vh;
+    border-bottom-right-radius: 10px;
+    left: -300px;
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.5s; }
+    .googleMaps .panel:hover {
+      left: 0; }
+    .googleMaps .panel .searchKicker {
+      display: inline-block;
+      margin: 20px auto 0 auto;
+      background-color: #4285f4;
+      width: 230px;
+      height: 52px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      .googleMaps .panel .searchKicker input {
+        position: relative;
+        top: 8px;
+        margin: 0 auto;
+        padding: 10px;
+        display: block;
+        outline: none;
+        border: none;
+        font-family: Lato;
+        font-weight: 900; }
+    .googleMaps .panel .menuSlide {
+      display: inline-block;
+      position: relative;
+      top: -72px;
+      left: 278px;
+      width: 110px;
+      height: 50px;
+      background-color: #fff;
+      margin-left: 7%;
+      cursor: default; }
+      .googleMaps .panel .menuSlide i {
+        position: relative;
+        top: 10px;
+        left: 40px; }
+    .googleMaps .panel .buttonUp {
+      display: block; }
+      .googleMaps .panel .buttonUp a {
+        text-decoration: none; }
+      .googleMaps .panel .buttonUp button {
+        outline: none;
+        border: none;
+        padding: 10px;
+        background-color: red;
+        font-size: 18px;
+        font-family: Lato;
+        font-weight: 900;
+        margin: -50px 0 0 0;
+        transition: 0.4s ease-in-out;
+        cursor: pointer; }
+        .googleMaps .panel .buttonUp button:hover {
+          padding: 15px; }
 
 body {
   background: url("../img/googleEarth.jpg");

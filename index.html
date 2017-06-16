@@ -9,12 +9,15 @@
 
 	<title>Quantox Find a Route</title>
 	
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
 	<link href="Font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="style/main.css">
 
 </head>
 
-<body  id="top">
+<body id="top">
+
 
 <header>
 
@@ -24,11 +27,9 @@
 
 <section>
 
-
 	<div class="mainWrap">
 		
 		<div class="textKicker">
-
 			<div class="firstWord">
 				<h2>Make</h2>
 			</div>
@@ -48,51 +49,51 @@
 			<div class="fifthWord">
 				<h2>Route</h2>
 			</div>
-
 		</div>
 
 		<div class="inputWrap">
-		<span>Start Your Destination</span>
-		<input type="text" id="start" value="" placeholder="Start"/>
+			<span>Start Your Destination</span>
+				<input type="text" id="start" value="" placeholder="Start"/>
 
-		<span>End Your Destination</span>
-		<input type="text" id="end" value="" placeholder="End">	
-
-		
-
+			<span>End Your Destination</span>
+				<input type="text" id="end" value="" placeholder="End">	
 		</div>
 
 	</div>
 
 
+	<div class="buttonWrap">
 
+		<button type="button" id="submit" onclick="window.location.href='#map';">Find a Route</button>
 
-<div class="buttonWrap">
-
-	<input type="button" id="show" value="Show Info" />
-<!-- <input type="button" id="submit" value="Find Route" /> -->
-
-<button type="button" id="submit" onclick="window.location.href='#map';">Find Route</button>
-
-</div>
+	</div>
 
 </section>
-
-
 
 
 <section class="googleMaps">
+	
 	<div class="panel">
-		<a href="#top">UP</a>
+
+
+		<div class="searchKicker">
+			<input type="text" id="search" value="" placeholder="Search Google Maps">
+		</div>
+	
+		<div class="menuSlide">
+			<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+		</div>
+
+		<div class="buttonUp">
+			<a href="#top"><button>GO UP</button></a>
+	
+		</div>
+
 	</div>
+	
 	<div id="map"></div>
 
-	
-
 </section>
-
-
-
 
 
 
@@ -100,7 +101,7 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmkBaMsaFYsppUdA79sskgq1ZmqqAlHaY&sensor=true&libraries=places"></script>
 
-
 <script src="js/main.js"></script>
+
 </body>
 </html>
