@@ -1,0 +1,138 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+header {
+  display: block;
+  margin: 0 auto;
+  width: 100%; }
+  header h1 {
+    font-size: 3vw;
+    font-weight: 700;
+    font-family: Arial;
+    color: white;
+    padding: 40px 44px;
+    margin: 0 auto; }
+
+section {
+  height: 100vh; }
+  section .mainWrap {
+    display: block;
+    margin: 1% auto 0 auto;
+    width: 70vw;
+    height: 30vh;
+    background-color: rgba(52, 168, 83, 0.8);
+    border-radius: 10px;
+    box-shadow: -5px 5px 20px #000; }
+    section .mainWrap .textKicker {
+      display: inline-block;
+      margin: -10px auto 0 10%; }
+      section .mainWrap .textKicker .firstWord, section .mainWrap .textKicker .secondWord, section .mainWrap .textKicker .thirdWord, section .mainWrap .textKicker .fourthWord, section .mainWrap .textKicker .fifthWord {
+        position: relative;
+        top: -23px;
+        width: 12vw;
+        height: 6vw;
+        background-color: #fbbc05;
+        border-radius: 5px;
+        box-shadow: 2px 3px 10px #000; }
+        section .mainWrap .textKicker .firstWord h2, section .mainWrap .textKicker .secondWord h2, section .mainWrap .textKicker .thirdWord h2, section .mainWrap .textKicker .fourthWord h2, section .mainWrap .textKicker .fifthWord h2 {
+          color: white;
+          font-size: 5vw;
+          padding: 10px 5px; }
+        section .mainWrap .textKicker .firstWord:hover, section .mainWrap .textKicker .secondWord:hover, section .mainWrap .textKicker .thirdWord:hover, section .mainWrap .textKicker .fourthWord:hover, section .mainWrap .textKicker .fifthWord:hover {
+          z-index: 999; }
+      section .mainWrap .textKicker .secondWord {
+        top: -35px;
+        left: 45px;
+        width: 9vw;
+        height: 5vw; }
+        section .mainWrap .textKicker .secondWord h2 {
+          font-size: 4vw; }
+      section .mainWrap .textKicker .thirdWord {
+        top: -50px;
+        left: -25px;
+        width: 11vw;
+        height: 6vw; }
+        section .mainWrap .textKicker .thirdWord h2 {
+          font-size: 5vw; }
+      section .mainWrap .textKicker .fourthWord {
+        top: -59px;
+        left: 50px;
+        width: 6.5vw;
+        height: 4vw; }
+        section .mainWrap .textKicker .fourthWord h2 {
+          font-size: 3vw; }
+      section .mainWrap .textKicker .fifthWord {
+        top: -60px;
+        left: 22px;
+        width: 11vw;
+        height: 5vw; }
+        section .mainWrap .textKicker .fifthWord h2 {
+          font-size: 4vw; }
+    section .mainWrap .inputWrap {
+      display: inline-block;
+      position: absolute;
+      margin: 6vh auto 0 10%; }
+      section .mainWrap .inputWrap input[type=text] {
+        display: block;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        padding: 15px;
+        width: 35vw;
+        font-size: 30px;
+        font-weight: 700;
+        font-family: Arial; }
+      section .mainWrap .inputWrap #start {
+        margin-bottom: 2%; }
+      section .mainWrap .inputWrap span {
+        font-size: 20px;
+        font-family: Arial;
+        color: #fff;
+        text-align: center; }
+  section .buttonWrap {
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: center; }
+
+.googleMaps {
+  box-shadow: 0 -15px 60px #000;
+  filter: grayscale(90%);
+  -webkit-filter: grayscale(90%);
+  -moz-filter: grayscale(90%);
+  -ms-filter: grayscale(90%);
+  background-color: #e5e3df; }
+  .googleMaps #map {
+    width: 100%;
+    height: 100vh; }
+  .googleMaps .panel {
+    position: absolute;
+    z-index: 5;
+    background-color: white;
+    width: 40vw;
+    height: 50px;
+    border-bottom-right-radius: 10px; }
+
+body {
+  background: url("../img/googleEarth.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/*# sourceMappingURL=main.css.map */

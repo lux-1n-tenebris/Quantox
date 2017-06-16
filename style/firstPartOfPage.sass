@@ -1,0 +1,123 @@
+header
+	display: block
+	margin: 0 auto
+	width: 100%
+	h1
+		font:
+			size: 3vw
+			weight: 700
+			family: Arial
+
+		color: white
+		padding: 40px 44px
+		margin: 0 auto
+
+section
+	height: 100vh
+
+	.mainWrap
+		display: block
+		// display: flex
+		// justify-content: center
+		margin: 1% auto 0 auto
+		width: 70vw
+		height: 30vh
+		background-color: rgba(52, 168, 83, 0.8)
+		border-radius: 10px
+		box-shadow: -5px 5px 20px #000
+
+		.textKicker
+			display: inline-block
+			margin: -10px auto 0 10% 
+			.firstWord
+				position: relative
+				top: -23px
+				width: 12vw
+				height: 6vw
+				background-color: rgba(251,188,5, 1)
+				border-radius: 5px
+				box-shadow: 2px 3px 10px #000
+				h2
+					color: white
+					font:
+						size: 5vw
+					padding: 10px 5px
+				&:hover
+					z-index: 999
+			.secondWord
+				@extend .firstWord
+				top: -35px
+				left: 45px
+				width: 9vw
+				height: 5vw
+				h2
+					font:
+						size: 4vw
+
+			.thirdWord
+				@extend .firstWord
+				top: -50px
+				left: -25px
+				width: 11vw
+				height: 6vw
+				h2
+					font:
+						size: 5vw
+			.fourthWord
+				@extend .firstWord
+				top: -59px
+				left: 50px
+				width: 6.5vw
+				height: 4vw
+				h2
+					font: 
+						size: 3vw
+			.fifthWord
+				@extend .firstWord
+				top: -60px
+				left: 22px
+				width: 11vw
+				height: 5vw
+				h2
+					font: 
+						size: 4vw
+		.inputWrap
+			display: inline-block
+			position: absolute
+			margin: 6vh auto 0 10%
+
+			input[type=text]
+				display: block
+				outline: none
+				border: none
+				border-radius: 10px
+				padding: 15px
+				width: 35vw
+				font:
+					size: 30px
+					weight: 700
+					family: Arial
+			#start
+				margin-bottom: 2%
+			span
+				font:
+					size: 20px
+					family: Arial
+
+				color: #fff
+				text-align: center
+
+				
+
+
+	.buttonWrap	
+		margin: 50px auto 0 auto
+		display: flex
+		justify-content: center
+
+		
+		
+
+
+
+
