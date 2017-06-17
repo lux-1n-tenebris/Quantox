@@ -32,7 +32,7 @@ section
 			.firstWord
 				position: relative
 				top: -23px
-				width: 12vw
+				width: 13vw
 				height: 6vw
 				background-color: rgb(251,188,5)
 				border-radius: 5px
@@ -42,7 +42,7 @@ section
 					color: white
 					font:
 						size: 5vw
-						family: Lato
+						family: Arial
 					padding: 10px 5px
 				&:hover
 					z-index: 999
@@ -69,7 +69,7 @@ section
 				@extend .firstWord
 				top: -59px
 				left: 50px
-				width: 6.5vw
+				width: 7vw
 				height: 4vw
 				h2
 					font: 
@@ -78,7 +78,7 @@ section
 				@extend .firstWord
 				top: -60px
 				left: 22px
-				width: 11vw
+				width: 12vw
 				height: 5vw
 				h2
 					font: 
@@ -101,15 +101,6 @@ section
 					family: Lato
 			#start
 				margin-bottom: 2%
-			// span
-			// 	font:
-			// 		size: 20px
-			// 		family: Lato
-
-			// 	color: #fff
-			// 	text-align: center
-
-				
 
 
 	.buttonWrap	
@@ -135,8 +126,42 @@ section
 				padding: 20px 50px
 
 
-			
-		
+@media screen and (max-width: 910px)
+	section
+		.mainWrap
+			width: 60vw
+			height: 20vh
+			.inputWrap
+				margin-top: 6vh
+				input[type=text]
+					padding: 10px
+					width: 25vw
+					font:
+						size: 15px
+
+
+@media screen and (max-width: 610px)
+	section
+		.mainWrap
+			width: 57vw
+			height: 13vh
+			border-radius: 5px
+			.inputWrap
+				margin-top: 4vh
+				input[type=text]
+					border-radius: 5px
+					padding: 5px
+					font-size: 10px
+
+		.buttonWrap
+			button
+				padding: 5px 30px
+				font: 
+					size: 15px
+				&:hover
+					padding: 10px 30px
+
+					
 
 
 

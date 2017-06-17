@@ -1,15 +1,3 @@
-// Map Script
-// function myMap() {
-// var mapProp= {
-//     center:new google.maps.LatLng(51.508742,-0.120850),
-//     zoom:3,
-//     scrollwheel: false,
-// };
-// var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-// }
-
-// myMap();
-
 
 // Smooth Scroll
 var $root = $('html, body');
@@ -25,6 +13,7 @@ $('a').click(function () {
 
     	return false;
 });
+
 
 // Map Script
 // Map Options
@@ -123,5 +112,30 @@ google.maps.event.addListener(autocomplete, 'place_changed', function() {
 
 
 
-// From tutorial
+// // Store Data
+// var names = [],
+//     tbody = $("#table tbody");
 
+// function getInfo(e) {
+//     var nameObj = {
+//         first: e.target.form[0].value,
+//         last: e.target.form[1].value
+//     };
+
+//     names.push(nameObj);
+
+//     e.target.form[0].value = "";
+//     e.target.form[1].value = "";
+//     tbody.empty();
+
+//     names.forEach(function (name) {
+//         var tr = $("<tr>");
+
+//         tr.append($("<td>").text(name.first));
+//         tr.append($("<td>").text(name.last));
+
+//         tbody.append(tr);
+//     });
+// }
+
+//  $("#submit").on("click", getInfo);

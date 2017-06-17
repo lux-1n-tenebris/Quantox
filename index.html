@@ -52,11 +52,15 @@
 		</div>
 
 		<div class="inputWrap">
-		<!-- 	<span>Start Your Destination</span> -->
-				<input type="text" id="start" value="" placeholder="Start Your Destination"/>
+	
+			<form id="form_id">
 
-			<!-- <span>End Your Destination</span> -->
-				<input type="text" id="end" value="" placeholder="End Your Distination">	
+				<input type="text" id="start" name="name" required="required" value="" placeholder="Start Your Destination"/>
+
+				<input type="text" id="end" name="name" required="required" value="" placeholder="End Your Distination">	
+
+			</form>
+		
 		</div>
 
 	</div>
@@ -67,6 +71,22 @@
 		<button type="button" id="submit" onclick="window.location.href='#map';">Find a Route // See The Map</button>
 
 	</div>
+
+
+<!-- <div id="table">
+    
+<h2>List of all person</h2>
+
+    <table class="footable">
+        <thead>
+            <tr>
+                <th data-class="expand">First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div> -->
 
 </section>
 
