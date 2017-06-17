@@ -11,23 +11,26 @@
   .googleMaps .panel {
     position: absolute;
     z-index: 5;
-    background-color: white;
     width: 300px;
-    height: 50vh;
+    height: 100vh;
     border-bottom-right-radius: 10px;
     left: -300px;
     transition: 0.5s ease-in-out;
-    transition-delay: 0.2s; }
+    transition-delay: 0.2s;
+    background: url("../img/map.jpg");
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+    box-shadow: 0 20px 20px #000; }
     .googleMaps .panel:hover {
       left: 0; }
     .googleMaps .panel .searchKicker {
-      display: inline-block;
+      display: block;
       margin: 20px auto 0 auto;
       background-color: #4285f4;
       width: 230px;
       height: 52px;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px; }
+      border-radius: 5px; }
       .googleMaps .panel .searchKicker input {
         position: relative;
         top: 8px;
@@ -45,7 +48,7 @@
     .googleMaps .panel .menuSlide {
       display: inline-block;
       position: relative;
-      top: -74px;
+      top: -72px;
       left: 278px;
       width: 110px;
       height: 50px;
@@ -57,21 +60,37 @@
         top: 10px;
         left: 40px; }
     .googleMaps .panel .buttonUp {
-      display: block; }
+      margin: 0 auto 50px auto; }
       .googleMaps .panel .buttonUp a {
         text-decoration: none; }
       .googleMaps .panel .buttonUp button {
+        margin: 0 auto;
+        display: block;
         outline: none;
         border: none;
+        width: 230px;
         padding: 10px;
         background-color: red;
         font-size: 18px;
         font-family: Lato;
         font-weight: 900;
-        margin: -50px 0 0 0;
-        transition: 0.4s ease-in-out;
         cursor: pointer; }
-        .googleMaps .panel .buttonUp button:hover {
-          padding: 15px; }
+    .googleMaps .panel #directionsPanel {
+      display: block;
+      max-height: 70vh;
+      overflow: auto; }
+      .googleMaps .panel #directionsPanel .infoWrap {
+        display: block;
+        margin: 50px auto 0 auto;
+        background-color: #34a853;
+        width: 230px;
+        height: 70px; }
+        .googleMaps .panel #directionsPanel .infoWrap h2 {
+          font-size: 22px;
+          font-family: Lato;
+          font-weight: 900;
+          color: #fff;
+          text-align: center;
+          padding-top: 20px; }
 
 /*# sourceMappingURL=secondPartOfPage.css.map */

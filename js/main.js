@@ -47,11 +47,21 @@ var directionDisplay;
       zoom: 7,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       center: Serbia,
-     
+      zoomControl: true,
+      mapTypeControl: true,
+      mapTypeControlOptions: {
+        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+        position: google.maps.ControlPosition.TOP_CENTER
+    },
+      scaleControl: true,
+      streetViewControl: true,
+      rotateControl: true,
+      fullscreenControl: true
     }
 
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
     directionsDisplay.setMap(map);
+    directionsDisplay.setPanel(document.getElementById('directionsPanel'));
   }
 
   //Find the Start and End Destination on google Map
@@ -114,3 +124,4 @@ google.maps.event.addListener(autocomplete, 'place_changed', function() {
 
 
 // From tutorial
+

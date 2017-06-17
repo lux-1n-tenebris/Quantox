@@ -18,25 +18,28 @@
 	.panel
 		position: absolute
 		z-index: 5
-		background-color: white
+		// background-color: white
 		width: 300px
-		height: 50vh
+		height: 100vh
 		border-bottom-right-radius: 10px
 		left: -300px
 		transition: 0.5s ease-in-out
 		transition-delay: 0.2s
-		
+		background: url('../img/map.jpg')
+			size: cover
+			position: top center
+			repeat: no-repeat
+		box-shadow: 0 10px 30px #000
 		&:hover
 			left: 0
 		
 		.searchKicker
-			display: inline-block
+			display: block
 			margin: 20px auto 0 auto
 			background-color: rgb(66,133,244)
 			width: 230px
 			height: 52px
-			border-top-right-radius: 10px
-			border-bottom-right-radius: 10px
+			border-radius: 5px
 			
 			input
 				position: relative
@@ -57,8 +60,8 @@
 		.menuSlide
 			display: inline-block
 			position: relative
-			top: -74px
-			left: 278px
+			top: -72px
+			left: 279px
 			width: 110px
 			height: 50px
 			background-color: #fff
@@ -70,20 +73,41 @@
 				left: 40px
 				
 		.buttonUp
-			display: block
+			margin: 0 auto 20px auto
 			a
 				text-decoration: none			
 			button
+				margin: 0 auto
+				display: block
 				outline: none
 				border: none
+				width: 230px
 				padding: 10px
 				background-color: red
 				font:
 					size: 18px
 					family: Lato
 					weight: 900
-				margin: -50px 0 0 0 
-				transition: 0.4s ease-in-out
 				cursor: pointer
-				&:hover
-					padding: 15px
+				
+		.infoWrap
+			display: block
+			margin: 50px auto 10px auto
+			background-color: rgba(52, 168, 83, 1)
+			width: 230px
+			height: 70px
+			h2
+				font: 
+					size: 22px
+					family: Lato
+					weight: 900
+				color: #fff
+				text-align: center
+				padding-top: 20px	
+
+		#directionsPanel
+			display: block
+			max-height: 65vh
+			overflow: auto
+			background-color: rgba(255, 255, 255, 0.6)
+	
